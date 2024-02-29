@@ -1,4 +1,3 @@
-import './App.css'
 import Select from './Select'
 
 function App() {

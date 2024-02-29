@@ -1,0 +1,86 @@
+.container{
+    position: relative;
+    color: black;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    /* min-width: 3rem; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    outline: none;
+}
+
+.container:focus{
+    border-color: #42a5f5;
+    outline: 0.2rem solid #42a5f5;
+}
+
+.clear-btn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+.clear-btn:hover,
+.clear-btn:focus{
+    color: #42a5f5;
+}
+
+.value{
+    flex-grow: 1;
+}
+
+.divider{
+    background-color: #777;
+    align-self: stretch;
+    width: 0.15rem;
+}
+
+.caret{
+    translate: 0 25%;
+    border: .25rem solid transparent;
+    border-top-color: #777;
+}
+
+.caret:hover{
+    border-top-color: #111;
+    scale: 1.5;
+}
+
+.options{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style-type: none;
+    max-height: 15rem;
+    overflow-y: auto;
+    display: none;
+    border: 0.1rem solid #777;
+    border-radius: 0.5rem;
+    width: 100%;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    z-index: 100;
+}
+
+.options.show{
+    display: block;
+}
+
+.option{
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+
+.option.highlight{
+    background-color: #42a5f5;
+    color: white;
+}
+.option.selected{
+    background-color: #68b2ee;
+}
